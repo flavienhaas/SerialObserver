@@ -8,3 +8,13 @@ C:\Users\Jean-Daniel\Desktop\Serial Observer\Serial Observer\obj\Debug\Serial Ob
 C:\Users\Jean-Daniel\Desktop\Serial Observer\Serial Observer\obj\Debug\Serial Observer.exe
 C:\Users\Jean-Daniel\Desktop\Serial Observer\Serial Observer\obj\Debug\Serial Observer.pdb
 C:\Users\Jean-Daniel\Desktop\Serial Observer\Serial Observer\obj\Debug\Serial_Observer.Form1.resources
+C:\Users\Jean-Daniel\Documents\GitHub\SerialObserver\Serial Observer\Serial Observer\bin\Debug\Serial Observer.exe.config
+C:\Users\Jean-Daniel\Documents\GitHub\SerialObserver\Serial Observer\Serial Observer\bin\Debug\Serial Observer.exe
+C:\Users\Jean-Daniel\Documents\GitHub\SerialObserver\Serial Observer\Serial Observer\bin\Debug\Serial Observer.pdb
+C:\Users\Jean-Daniel\Documents\GitHub\SerialObserver\Serial Observer\Serial Observer\obj\Debug\Serial Observer.csprojResolveAssemblyReference.cache
+C:\Users\Jean-Daniel\Documents\GitHub\SerialObserver\Serial Observer\Serial Observer\obj\Debug\Serial_Observer.Form1.resources
+C:\Users\Jean-Daniel\Documents\GitHub\SerialObserver\Serial Observer\Serial Observer\obj\Debug\Serial_Observer.Properties.Resources.resources
+C:\Users\Jean-Daniel\Documents\GitHub\SerialObserver\Serial Observer\Serial Observer\obj\Debug\Serial Observer.csproj.GenerateResource.cache
+C:\Users\Jean-Daniel\Documents\GitHub\SerialObserver\Serial Observer\Serial Observer\obj\Debug\Serial Observer.csproj.CoreCompileInputs.cache
+C:\Users\Jean-Daniel\Documents\GitHub\SerialObserver\Serial Observer\Serial Observer\obj\Debug\Serial Observer.exe
+C:\Users\Jean-Daniel\Documents\GitHub\SerialObserver\Serial Observer\Serial Observer\obj\Debug\Serial Observer.pdb

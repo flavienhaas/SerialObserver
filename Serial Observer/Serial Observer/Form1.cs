@@ -27,7 +27,7 @@ namespace Serial_Observer
             InitializeComboBox();
 
             // Form size
-            this.Size = new Size(670, 300);
+            this.Size = new Size(670, 310);
             this.FormBorderStyle = FormBorderStyle.Fixed3D;
 
             // Form options
@@ -89,7 +89,15 @@ namespace Serial_Observer
         {
             try
             {
-                serialPort.Write(textBox_textToSend.Text);
+                if(checkBox_HexEntering.Checked)
+                {
+                    serialPort.Write(HexToString(textBox_textToSend.Text));
+                }
+                else
+                {
+                    serialPort.Write(textBox_textToSend.Text);
+                }
+
                 textBox_textToSend.Clear();
             }
             catch(Exception ex)
@@ -110,6 +118,14 @@ namespace Serial_Observer
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Erreur !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void checkBox_HexEntering_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox_HexEntering.Checked == true)
+            {
+                MessageBox.Show(String.Format("Mode d'entrée hexadécimal actif ! \r\nSyntaxe : '68-65-6C-6C-6F' pour ecrire 'hello'."),"Changement de mode d'entrée",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }
         }
 
@@ -221,6 +237,18 @@ namespace Serial_Observer
         private void AddListItemMethod(String myString)
         {
             listBox_portLogs.Items.Add(myString);
+        }
+
+        private string HexToString(string hexdata)
+        {
+            string[] hexDataSplit = hexdata.Split('-');
+
+            for (int count = 0 ; count < hexDataSplit.Length ; count++)
+            {
+                hexDataSplit[count] = Char.ConvertFromUtf32(Convert.ToInt32(hexDataSplit[count], 16));
+            }
+
+            return (String.Join("", hexDataSplit));
         }
     }
 }

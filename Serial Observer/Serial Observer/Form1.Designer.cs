@@ -38,6 +38,7 @@
             this.button_portDisconnect = new System.Windows.Forms.Button();
             this.button_portSend = new System.Windows.Forms.Button();
             this.textBox_textToSend = new System.Windows.Forms.TextBox();
+            this.checkBox_HexEntering = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // listBox_portLogs
@@ -125,11 +126,23 @@
             this.textBox_textToSend.Size = new System.Drawing.Size(628, 20);
             this.textBox_textToSend.TabIndex = 9;
             // 
+            // checkBox_HexEntering
+            // 
+            this.checkBox_HexEntering.AutoSize = true;
+            this.checkBox_HexEntering.Location = new System.Drawing.Point(13, 248);
+            this.checkBox_HexEntering.Name = "checkBox_HexEntering";
+            this.checkBox_HexEntering.Size = new System.Drawing.Size(156, 17);
+            this.checkBox_HexEntering.TabIndex = 10;
+            this.checkBox_HexEntering.Text = "Mode d\'entrée hexadécimal";
+            this.checkBox_HexEntering.UseVisualStyleBackColor = true;
+            this.checkBox_HexEntering.CheckedChanged += new System.EventHandler(this.checkBox_HexEntering_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox_HexEntering);
             this.Controls.Add(this.textBox_textToSend);
             this.Controls.Add(this.button_portSend);
             this.Controls.Add(this.button_portDisconnect);
@@ -159,6 +172,7 @@
         private System.Windows.Forms.Button button_portDisconnect;
         private System.Windows.Forms.Button button_portSend;
         private System.Windows.Forms.TextBox textBox_textToSend;
+        private System.Windows.Forms.CheckBox checkBox_HexEntering;
     }
 }
 
