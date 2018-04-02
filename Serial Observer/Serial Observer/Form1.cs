@@ -27,7 +27,7 @@ namespace Serial_Observer
             InitializeComboBox();
 
             // Form size
-            this.Size = new Size(670, 310);
+            this.Size = new Size(670, 320);
             this.FormBorderStyle = FormBorderStyle.Fixed3D;
 
             // Form options
@@ -35,6 +35,7 @@ namespace Serial_Observer
 
             // Buttons
             modifyButtonsAccess(true, false, false);
+            button_setupForm.Enabled = false;
         }
 
         /***************************** Events *****************************/
@@ -106,6 +107,10 @@ namespace Serial_Observer
             }
         }
 
+        private void button_setupForm_Click(object sender, EventArgs e)
+        {
+        }
+
         private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
         {
             try
@@ -129,7 +134,7 @@ namespace Serial_Observer
             }
         }
 
-        /************************* Private Methods *************************/
+        /************************* Private Methods Form1 *************************/
         private void InitializeComboBox()
         {
             // Port name
@@ -237,7 +242,7 @@ namespace Serial_Observer
         private void AddListItemMethod(String myString)
         {
             listBox_portLogs.Items.Add(myString);
-            listBoxGoToLast();
+            listBoxGoToLastItem();
         }
 
         private string HexToString(string hexdata)
@@ -252,7 +257,7 @@ namespace Serial_Observer
             return (String.Join("", hexDataSplit));
         }
 
-        private void listBoxGoToLast()
+        private void listBoxGoToLastItem()
         {
             listBox_portLogs.TopIndex = listBox_portLogs.Items.Count - 1;
         }
