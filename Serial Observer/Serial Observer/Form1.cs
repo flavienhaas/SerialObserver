@@ -237,6 +237,7 @@ namespace Serial_Observer
         private void AddListItemMethod(String myString)
         {
             listBox_portLogs.Items.Add(myString);
+            listBoxGoToLast();
         }
 
         private string HexToString(string hexdata)
@@ -249,6 +250,11 @@ namespace Serial_Observer
             }
 
             return (String.Join("", hexDataSplit));
+        }
+
+        private void listBoxGoToLast()
+        {
+            listBox_portLogs.TopIndex = listBox_portLogs.Items.Count - 1;
         }
     }
 }
