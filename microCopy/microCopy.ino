@@ -27,7 +27,9 @@ void loop()
       Serial.write(0x70);
       Serial.write(0x3A);
       Serial.write(0x32);
-      Serial.write(0x1F);
+      Serial.write(0x32);
+      Serial.write(0x2e);
+      Serial.write(0x31);
       Serial.write(0x43);
       Serial.write("\r\n");
       
